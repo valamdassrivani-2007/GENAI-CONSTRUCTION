@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI BuildWise Construction Planner</title>
+</head>
+
+<body>
+
+<h2>AI BuildWise Construction Time Predictor</h2>
+
+<form action="/predict" method="post">
+
+Project Size (sq ft)<br>
+<input type="number" name="size"><br><br>
+
+Number of Workers<br>
+<input type="number" name="workers"><br><br>
+
+Budget (lakhs)<br>
+<input type="number" name="budget"><br><br>
+
+<button type="submit">Predict</button>
+
+</form>
+
+{% if prediction %}
+<h3>Estimated Construction Time: {{prediction}} months</h3>
+{% endif %}
+
+</body>
+</html>
