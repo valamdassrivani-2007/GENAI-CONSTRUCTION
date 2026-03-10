@@ -1,8 +1,7 @@
 # AI BuildWise Construction Planning
 # Predict construction time based on project data
-
 import numpy as np
-from sklearn . linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression
 # Sample training data
 # Columns: [Project Size (sq ft), Workers, Budget (lakhs)]
 X = np.array([
